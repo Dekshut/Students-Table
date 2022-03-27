@@ -4,6 +4,7 @@ import ArchivedList from "./ArchivedList/ArchivedList";
 
 
 function ContentMain() {
+
   return (
     <div >
       <StudentsTable  />

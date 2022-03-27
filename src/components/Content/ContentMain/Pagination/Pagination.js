@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { resetSelect } from '../../../../redux/reducers/StudentsTable/selectMenuSlice';
 import { setRowsForPage, setCurrentPage, fetchTable } from '../../../../redux/reducers/StudentsTable/tableSlice';
 import CustomSelect from '../../../common/CustomSelect/CustomSelect';
+import ArrowLeft from '../../../common/SVGIcons/PaginationArrow/ArrowLeft';
+import ArrowRight from '../../../common/SVGIcons/PaginationArrow/ArrowRight';
 import * as S from './Pagination.styled';
 
 const Pagination = () => {
@@ -41,14 +43,10 @@ const Pagination = () => {
         {startPos}-{rows * currentPage} of {totalPosts}
       </S.PaginationTotal>
       <S.PaginationBtn onClick={() => onClickBtn('back')}>
-        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.5917 2.225L9.10837 0.75L0.866699 9L9.1167 17.25L10.5917 15.775L3.8167 9L10.5917 2.225Z" fill="#5B5B5B" />
-        </svg>
+        <ArrowLeft/>
       </S.PaginationBtn>
       <S.PaginationBtn onClick={() => onClickBtn('next')}>
-        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0.408447 15.775L1.88345 17.25L10.1334 9L1.88345 0.75L0.408447 2.225L7.18345 9L0.408447 15.775Z" fill="#5B5B5B" />
-        </svg>
+        <ArrowRight/>
       </S.PaginationBtn>
     </S.PaginationInner>
   );

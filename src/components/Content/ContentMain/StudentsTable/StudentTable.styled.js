@@ -61,15 +61,6 @@ export const CustomTable = styled.table`
   }
 `;
 
-export const InfoIconWrapper = styled.div`
-  margin-right: 7px;
-  cursor: pointer;
-
-  svg{
-    margin-bottom: -3px;
-  }
-`;
-
 export const alertTh = styled.th`
   background-color: pink;
   font-weight: 700;

@@ -1,10 +1,10 @@
-import CrossIcon from "../../common/CrossIcon/CrossIcon";
+import CrossIcon from "../../common/SVGIcons/CrossIcon/CrossIcon";
 import * as S from "./ClearButton.styled";
 
 function ClearButton() {
   return (
     <S.ClearButtonWrapper>
-      <CrossIcon />
+      <CrossIcon/>
       <S.ClearButtonInner >
         CLEAR ALL
       </S.ClearButtonInner>

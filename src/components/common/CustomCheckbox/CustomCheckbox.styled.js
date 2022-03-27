@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from './CheckedIcon.svg'
+import bg from '../SVGIcons/CheckedIcon/CheckedIcon.svg'
 
 export const CheckboxLabel = styled.label`
   position: relative;

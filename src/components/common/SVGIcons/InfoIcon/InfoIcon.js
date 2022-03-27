@@ -1,4 +1,5 @@
-import * as S from "./StudentTable.styled";
+import * as S from "./InfoIcon.styled";
+
 
 function InfoIcon() {
   return (
